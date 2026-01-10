@@ -12,41 +12,41 @@ body {
     font-style: normal;
 }
 
-header{
+header {
     background-color: rgba(255, 230, 202, 0.589);
 
 }
 
-.navbar{
+.navbar {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-#banner{
+#banner {
     width: 80%;
     margin: 0 auto;
     padding-top: 40px;
-            padding-bottom: 40px;
+    padding-bottom: 40px;
 
 }
 
-.brand-name{
+.brand-name {
     font-size: 1.8rem;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     gap: 50px;
     list-style: none;
 }
 
-.navbar li a{
-      text-decoration: none;
-      font-size: 1.2rem;
-      color: black;
+.navbar li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
 }
 
-.banner-contant{
+.banner-contant {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,22 +56,186 @@ header{
     gap: 30px;
 }
 
-.btn{
-    background-color: rgb(255, 191, 71);
+.btn {
+    background-color:#FF900E;
     font-weight: bold;
     padding: 14px 20px;
     border: none;
     border-radius: 5px;
     color: white;
     margin-top: 30px;
+    cursor: pointer;
 }
 
-.banner-contant h1{
+.banner-contant h1 {
     font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.bannar-img{
+.bannar-img {
     height: 70%;
 }
+
+.continar{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.boxes{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+}
+
+.discription{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discription h1{
+    color: gray;
+    font-size: 2rem;
+}
+
+.Features-contant{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    gap: 8rem;
+}
+
+.contant h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-left: 8px solid rgb(255, 191, 71);
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+.imeges .btn{
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+    padding: 40px;
+}
+
+.contant div{
+    margin-top: 50px;
+    padding: 30px;
+    box-shadow: 1px 1px 2px 1px rgb(196, 191, 191);
+}
+
+.some-facts{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.itmes{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.item{
+    height: 150px;
+    width: 200px;
+    border: 2px solid #FF900E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+.some-facts h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.some-facts p{
+    margin-bottom: 80px;
+}
+
+.sponser{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.sponser h1{
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.sponser div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.end{
+    width: 60%;
+    margin: 0 auto;
+    background-color: #FFF4E7;
+    padding: 30px 10%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar, .navbar ul, .continar, .Features-contant, .itmes, .sponser div {
+        flex-direction: column;
+        gap: 5px;
+    }
+    #banner, .continar, .Features-contant, .imeges .btn{
+        width: 100%;
+    }
+    .boxes, .discription{
+        grid-template-columns: repeat(1, 4fr);
+        width: 100%;
+        margin: 0 auto;        
+    }
+    .imeges img{
+        width: 100% ;
+    }
+
+    .imeges .btn,.contant div, .contant h1 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .navbar, .navbar ul, .continar , .Features-contant {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .sponser div{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+     .boxes, .discription{
+        grid-template-columns: repeat(1, 4fr);
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
